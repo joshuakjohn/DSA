@@ -1,0 +1,16 @@
+Time Complexity
+Time complexity refers to the amount of time an algorithm takes to complete as a function of the size of the input. 
+It helps us understand how the algorithm's running time increases as the size of the input increases.
+
+Big O Notation: Time complexity is typically expressed using Big O notation, 
+which gives an upper bound on the time taken by an algorithm in terms of the input size 𝑛.
+
+Common Time Complexities:
+
+O(1): Constant time, independent of the input size.
+O(log n): Logarithmic time, where the time grows logarithmically with the input size (e.g., binary search).
+O(n): Linear time, where the time grows directly in proportion to the input size (e.g., simple loops).
+O(n log n): Log-linear time, common in algorithms like mergesort and heapsort.
+O(n^2): Quadratic time, where time grows with the square of the input size (e.g., nested loops).
+O(2^n): Exponential time, often seen in brute-force algorithms like those used in combinatorics.
+O(n!): Factorial time, used in certain algorithms for generating permutations.
