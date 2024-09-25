@@ -1,0 +1,11 @@
+Space Complexity
+Space complexity measures the amount of memory an algorithm uses as a function of the input size. 
+This includes both the space needed for the input and any extra space used during the computation.
+
+Auxiliary Space: Focuses on the additional memory used by the algorithm, excluding the memory for the input itself.
+
+Common Space Complexities:
+
+O(1): Constant space, meaning the algorithm requires a fixed amount of space regardless of input size.
+O(n): Linear space, where the space grows linearly with the input size (e.g., storing data in an array).
+O(n^2): Quadratic space, often resulting from storing a 2D matrix or using recursive calls that need to keep track of state.
