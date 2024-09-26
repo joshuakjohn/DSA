@@ -9,3 +9,36 @@ Common Space Complexities:
 O(1): Constant space, meaning the algorithm requires a fixed amount of space regardless of input size.
 O(n): Linear space, where the space grows linearly with the input size (e.g., storing data in an array).
 O(n^2): Quadratic space, often resulting from storing a 2D matrix or using recursive calls that need to keep track of state.
+
+function bubbleSort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                // Swap elements
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+    }
+}
+Space Complexity: O(1) – No extra memory used except for the loop counters and the temp variable.
+
+function mergeSort(arr) {
+    if (arr.length < 2) return arr;
+    const mid = Math.floor(arr.length / 2);
+    const left = mergeSort(arr.slice(0, mid));
+    const right = mergeSort(arr.slice(mid));
+    return merge(left, right);
+}
+
+function merge(left, right) {
+    let result = [];
+    let l = 0, r = 0;
+    while (l < left.length && r < right.length) {
+        if (left[l] < right[r]) result.push(left[l++]);
+        else result.push(right[r++]);
+    }
+    return result.concat(left.slice(l)).concat(right.slice(r));
+}
+Space Complexity: O(n) – Additional space is used to store the temporary arrays for merging during the recursive calls.
